@@ -1,4 +1,5 @@
 const React = require("react");
+const PropTypes = require("prop-types");
 const _ = require("lodash");
 
 const c3 = require("c3");
@@ -7,30 +8,30 @@ const d3 = require("d3");
 let C3Chart = React.createClass({
 	displayName: "C3Chart",
   propTypes: {
-    type: React.PropTypes.string.isRequired,
-    data: React.PropTypes.array.isRequired,
-		options: React.PropTypes.shape({
-			padding: React.PropTypes.shape({
-				top: React.PropTypes.number,
-				bottom: React.PropTypes.number,
-				left: React.PropTypes.number,
-				right: React.PropTypes.number
+    type: PropTypes.string.isRequired,
+    data: PropTypes.array.isRequired,
+		options: PropTypes.shape({
+			padding: PropTypes.shape({
+				top: PropTypes.number,
+				bottom: PropTypes.number,
+				left: PropTypes.number,
+				right: PropTypes.number
 			}),
-			size: React.PropTypes.shape({
-				width: React.PropTypes.number,
-				height: React.PropTypes.number,
+			size: PropTypes.shape({
+				width: PropTypes.number,
+				height: PropTypes.number,
 			}),
-			labels: React.PropTypes.bool,
-			onclick: React.PropTypes.func,
-			axisLabel: React.PropTypes.shape({
-				x: React.PropTypes.string,
-				y: React.PropTypes.string
+			labels: PropTypes.bool,
+			onclick: PropTypes.func,
+			axisLabel: PropTypes.shape({
+				x: PropTypes.string,
+				y: PropTypes.string
 			}),
-			subchart: React.PropTypes.bool,
-			zoom: React.PropTypes.bool,
-			grid: React.PropTypes.shape({
-				x: React.PropTypes.bool,
-				y: React.PropTypes.bool
+			subchart: PropTypes.bool,
+			zoom: PropTypes.bool,
+			grid: PropTypes.shape({
+				x: PropTypes.bool,
+				y: PropTypes.bool
 			})
 		})
   },
