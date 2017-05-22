@@ -13,6 +13,10 @@ npm install c3-react
 
 ```
 const C3Chart = require("./C3Chart.jsx");
+
+// or
+
+import C3Chart from 'c3-react';
 ```
   
 * In parnet component
@@ -24,14 +28,14 @@ const C3Chart = require("./C3Chart.jsx");
 ```
 let data = [
   {
-    key: "dataSource1"
+    key: "dataSource1",
     values: [
       {label: "A", value: 3},
       {label: "B", value: 4}
     ]
   },
   {
-    key: "dataSource2"
+    key: "dataSource2",
     values: [
       {label: "X", value: 7},
       {label: "Y", value: 8}
